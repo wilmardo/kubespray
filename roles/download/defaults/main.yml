@@ -146,9 +146,10 @@ kubeadm_checksums:
     v1.10.1: 4de2f3823dc89efb11db30666eae8b8063bc10d4515167cdf08ab5b0c7608e7c
     v1.10.0: 19ebef6450421ace7c4a0703360a7aeba1840a1596a699828e69444cae4ccf4f
 
-etcd_binary_checksum: 947849dbcfa13927c81236fb76a7c01d587bbab42ab1e807184cd91b026ebed7
 hyperkube_binary_checksum: "{{ hyperkube_checksums[image_arch][kube_version] }}"
 kubeadm_binary_checksum: "{{ kubeadm_checksums[image_arch][kubeadm_version] }}"
+
+etcd_binary_checksum: 947849dbcfa13927c81236fb76a7c01d587bbab42ab1e807184cd91b026ebed7
 
 # Containers
 # In some cases, we need a way to set --registry-mirror or --insecure-registry for docker,
